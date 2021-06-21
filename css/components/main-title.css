@@ -1,0 +1,6 @@
+.main-title {
+    margin-bottom: 1rem;
+    font: 700 1.875rem 'Poppins', sans-serif;
+    color: var(--title-color);
+    -webkit-font-smoothing: auto;
+}

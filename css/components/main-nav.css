@@ -1,0 +1,12 @@
+#main-nav {
+    height: 4.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
