@@ -17,30 +17,50 @@
     <link rel="stylesheet" href="../css/components/wrapper-text.css"> 
     <link rel="stylesheet" href="../css/components/main-button.css"> 
     <link rel="stylesheet" href="../css/components/main-divider.css">
-    <link rel="stylesheet" href="../css/components/wrapper-home.css"> 
-
+    <link rel="stylesheet" href="../css/components/wrapper-grid.css"> 
+    <link rel="stylesheet" href="../css/components/main-menu.css">
 </head>
 <body>
     <header class="main-header">
-        <nav id="main-nav" class="main-container">
+        <nav id="main-nav" class="main-container show">
             <a class="logo" href="#">beauty<span>salon</span>.</a>
-            <img class="menu" src="assets/menu-icon.png" alt="menu-icon">
+            <div class="main-menu">
+                <ul>
+                    <li><a class="main-title" href="#home">Início</a></li>
+                    <li><a class="main-title" href="#about">Sobre</a></li>
+                    <li><a class="main-title" href="#services">Serviços</a></li>
+                    <li><a class="main-title" href="#testimonials">Depoimentos</a></li>
+                    <li><a class="main-title" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="open">...</div>
+            <div class="close">x</div>
         </nav>
     </header>
+
     <main>
         <section class="main-home" id="home">
-            <div class="wrapper-home">
+            <div class="wrapper-grid">
                 <div class="image">
                     <img class="img" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mulher penteando outra">
                 </div>
                 <div class="wrapper-text">
-                    <h1 class="main-title">Saúde natural para os seus cabelos</h1>
+                    <h2 class="main-title">Saúde natural para os seus cabelos</h2>
                     <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
                     <a class="main-button" href="#">Agendar horário</a>
                 </div>
             </div>
         </section>
+
         <div class="main-divider"></div>
+
+        <section class="section" id="about">
+            <div class="wrapper-grid main-container">Sobre</div>
+        </section>
+
+        <section class="section" id="services">
+            <div class="wrapper-grid main-container">Serviços</div>
+        </section>
     </main>
 </body>
 </html>     

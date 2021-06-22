@@ -1,5 +1,6 @@
 #home {
-    padding: 5.7rem 0;
+    padding-bottom: 5.375rem;
+    padding-top: calc(var(--height-header) + 2rem);
     overflow: hidden;
 }
 
