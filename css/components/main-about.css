@@ -1,0 +1,30 @@
+#about {
+    padding-bottom: 5.375rem;
+    padding-top: calc(var(--height-header) + 2rem);
+    overflow: hidden;
+}
+
+#about .image {
+    position: relative;
+}
+
+#about .image::before { 
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: var(--base-color-second);
+    position: absolute;
+    top: -8.39%; /* 21,35 * 100 / 254,26 */ 
+    right: 33.04%; /* 120,71 * 100 / 365,29 */
+    z-index: 0;
+}
+
+#about .image img {
+    position: relative;
+    
+}
+
+#about .image img,
+#about .image::before {
+    border-radius: 0.25rem;
+}
