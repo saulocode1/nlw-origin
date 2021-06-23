@@ -1,7 +1,5 @@
-#about {
-    padding-bottom: 5.375rem;
-    padding-top: calc(var(--height-header) + 2rem);
-    overflow: hidden;
+.main-about {
+    background-color: white;
 }
 
 #about .image {

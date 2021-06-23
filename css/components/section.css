@@ -1,0 +1,5 @@
+.section{
+    padding-bottom: 5rem;
+    padding-top: calc(var(--height-header) + 2rem);
+    overflow: hidden;
+}
