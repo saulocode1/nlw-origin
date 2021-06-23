@@ -18,6 +18,7 @@ body {
     color: var(--text-color);
     background: var(--body-color);
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 main {
@@ -26,4 +27,8 @@ main {
 
 nav {
     height: var(--height-header);
+}
+
+ul {
+    list-style: none;
 }

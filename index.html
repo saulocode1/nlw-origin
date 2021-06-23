@@ -7,6 +7,9 @@
     <title>beautySalon</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/fonts/style.css">
+
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/components/main-header.css">
@@ -17,15 +20,16 @@
     <link rel="stylesheet" href="../css/components/wrapper-text.css"> 
     <link rel="stylesheet" href="../css/components/main-button.css"> 
     <link rel="stylesheet" href="../css/components/main-divider.css">
-    <link rel="stylesheet" href="../css/components/wrapper-grid.css"> 
     <link rel="stylesheet" href="../css/components/main-menu.css">
+    <link rel="stylesheet" href="../css/components/grid.css">
+    <link rel="stylesheet" href="../css/components/main-about.css">
 </head>
 <body>
     <header class="main-header">
-        <nav id="main-nav" class="main-container show">
+        <nav id="main-nav" class="main-container">
             <a class="logo" href="#">beauty<span>salon</span>.</a>
             <div class="main-menu">
-                <ul>
+                <ul class="list -grid">
                     <li><a class="main-title" href="#home">Início</a></li>
                     <li><a class="main-title" href="#about">Sobre</a></li>
                     <li><a class="main-title" href="#services">Serviços</a></li>
@@ -33,14 +37,14 @@
                     <li><a class="main-title" href="#contact">Contato</a></li>
                 </ul>
             </div>
-            <div class="open">...</div>
-            <div class="close">x</div>
+            <div id="menu" class="toggle icon-menu"></div>
+            <div id="close" class="toggle icon-close"></div>
         </nav>
     </header>
 
     <main>
         <section class="main-home" id="home">
-            <div class="wrapper-grid">
+            <div class="container -grid">
                 <div class="image">
                     <img class="img" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mulher penteando outra">
                 </div>
@@ -54,13 +58,27 @@
 
         <div class="main-divider"></div>
 
-        <section class="section" id="about">
-            <div class="wrapper-grid main-container">Sobre</div>
+        <section class="main-about section" id="about">
+            <div class="container -grid">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mulheres sorrindo com itens de cabelo">
+                </div>
+                <div class="wrapper-text -left">
+                    <h2 class="main-title">Sobre nós</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque delectus nobis quos, ipsam dolor, dignissimos inventore incidunt fuga, ea eveniet reiciendis consequatur? Consectetur cumque repellendus non maiores assumenda, molestiae ad?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut expedita eos, omnis ab saepe in porro corporis fugit animi! Totam sunt, nesciunt tempora iste saepe voluptate. Hic excepturi facilis debitis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, provident minus corporis ipsam recusandae alias blanditiis totam, dignissimos, aliquid harum voluptate autem. Aperiam cumque ducimus magni natus facilis harum quas!</p>
+                </div>
+            </div>
         </section>
+
+        <div class="main-divider-2"></div>
 
         <section class="section" id="services">
             <div class="wrapper-grid main-container">Serviços</div>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>     

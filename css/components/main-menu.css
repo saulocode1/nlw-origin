@@ -3,13 +3,31 @@
     visibility: hidden;
 }
 
-nav.show .main-menu{
-    background-color: var(--body-color);
-    opacity: 1;
-    visibility: visible;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
+.main-menu a {
+    transition: color 0.3s;
+    position: relative;
+}
+.main-menu a:hover {
+    color: var(--base-color);
+}
+
+.main-menu ul li a::after {
+    content: '';
+    width: 0%;
+    background-color: var(--base-color);
+    height: 2px;
+    position: absolute;
     left: 0;
+    bottom: -1rem;
+    transition: width 0.2s;
+}
+
+.main-menu ul li a:hover::after {
+    width: 100%;
+}
+
+.toggle {
+    color: var(--base-color);
+    font-size: 1.5rem;
+    cursor: pointer;
 }
