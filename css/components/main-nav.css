@@ -33,6 +33,11 @@
 #main-nav .list {
     text-align: center;
     gap: 4rem;
+    display: none;
+}
+
+#main-nav.-show .list {
+    display: grid;
 }
 
 /* .menu {

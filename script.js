@@ -16,3 +16,16 @@ for (link of links) {
         nav.classList.remove('-show') // remove classe -show do nav
     })
 }
+
+// adicionar sombra no main header quando der scroll 
+const header = document.querySelector('.main-header')
+const navHeight = header.offsetHeight // offsetHeight - pega altura do elemento
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY >= navHeight) { // scrollY - altura do scroll no eixo Y
+        header.classList.add('-scroll')
+    }
+    else {
+        header.classList.remove('-scroll')
+    }
+})

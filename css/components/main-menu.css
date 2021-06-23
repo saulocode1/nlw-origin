@@ -1,6 +1,9 @@
 .main-menu {
     opacity: 0;
     visibility: hidden;
+    transition: 0.2s;
+
+    top: -20rem;
 }
 
 .main-menu a {
