@@ -1,15 +1,15 @@
-#home {
+.main-home {
     text-align: center;
     padding-bottom: 5.31rem;
     padding-top: calc(var(--height-header) + 2rem);
     overflow: hidden;
 }
 
-#home .image {
+.main-home .image {
     position: relative;
 }
 
-#home .image::before { 
+.main-home .image::before { 
     content: '';
     height: 100%;
     width: 100%;
@@ -20,13 +20,13 @@
     z-index: 0;
 }
 
-#home .image img {
+.main-home .image img {
     position: relative;
     right: 2.93rem;
 }
 
-#home .image img,
-#home .image::before {
+.main-home .image img,
+.main-home .image::before {
     border-radius: 0.25rem;
 } 
 

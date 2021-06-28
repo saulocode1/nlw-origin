@@ -1,12 +1,15 @@
-.main-about {
+.main-about.section{
+    padding-bottom: 5rem;
+    padding-top: calc(var(--height-header) + 1.8rem);
+    overflow: hidden;
     background-color: white;
 }
 
-#about .image {
+.main-about .image {
     position: relative;
 }
 
-#about .image::before { 
+.main-about .image::before { 
     content: '';
     height: 100%;
     width: 100%;
@@ -17,12 +20,12 @@
     z-index: 0;
 }
 
-#about .image img {
+.main-about .image img {
     position: relative;
     
 }
 
-#about .image img,
-#about .image::before {
+.main-about .image img,
+.main-about .image::before {
     border-radius: 0.25rem;
 }
