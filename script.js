@@ -40,3 +40,21 @@ const swiper = new Swiper('.swiper-container', {
     mousewheel: true,
     keyboard: true,
   });
+
+// scroll reveal - mostrar elementos quando der scroll na pagina
+
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 700,
+    reset: true    
+})
+
+scrollReveal.reveal (`
+    #home .image, #home .wrapper-text,
+    #about .image, #about .wrapper-text,
+    #services header, #services .card,
+    #testimonials header, #testimonials .testimonial,
+    #contacts .text, #contacts .links
+    `, {interval: 100}) 
+    // elementos em ordem, intervalo para proximo elemento aparecer
