@@ -47,7 +47,6 @@ const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
     duration: 700,
-    reset: true
 })      
 
 scrollReveal.reveal (`
@@ -55,7 +54,8 @@ scrollReveal.reveal (`
     #about .image, #about .wrapper-text,
     #services header, #services .card,
     #testimonials header, #testimonials .testimonial,
-    #contacts .text, #contacts .links
+    #contacts .text, #contacts .links,
+    #footer .brand, #footer .social
     `, 
     { interval: 100 }
     ) 
