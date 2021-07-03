@@ -9,12 +9,14 @@
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    right: 1.5rem;
+    right: 1.5rem; 
+    transition: 0.2s;
 }
 
 #main-nav.-show .icon-close {
     visibility: visible;
     opacity: 1;
+    transition: 0.2s;
 }
 
 #main-nav.-show .main-menu{
@@ -39,9 +41,3 @@
 #main-nav.-show .list {
     display: grid;
 }
-
-/* .menu {
-    width: 1.5rem;
-    height: 1.5rem;
-    cursor: pointer;
-} */

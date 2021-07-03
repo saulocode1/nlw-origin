@@ -58,6 +58,6 @@ scrollReveal.reveal (`
     #contacts .text, #contacts .links,
     #footer .logo, #footer .brand, #footer .social
     `, 
-    { interval: 200 }
+    { interval: 100 }
     ) 
     // elementos em ordem, intervalo para proximo elemento aparecer
