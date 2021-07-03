@@ -41,3 +41,16 @@
 #main-nav.-show .list {
     display: grid;
 }
+
+
+#arrow-up {
+    background-color: var(--base-color);
+    color: var(--text-color-light);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    clip-path: circle();
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}

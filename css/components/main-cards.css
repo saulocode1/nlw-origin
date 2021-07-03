@@ -12,9 +12,10 @@
     box-shadow: 0rem 0rem 0.75rem rgba(0, 0, 0, 0.08);
 }
 
-.card .icon {
-    width: 5rem;
-    height: 5rem;
+.card i {
+    display: block;
+    font-size: 5rem;
+    color: var(--base-color);
 }
 
 .card .main-subtitle {

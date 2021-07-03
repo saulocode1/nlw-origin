@@ -1,4 +1,4 @@
-// abre e fecha menu 
+    // abre e fecha menu 
 const nav = document.querySelector('#main-nav')
 const toggle = document.querySelectorAll('.toggle')
 
