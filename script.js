@@ -47,16 +47,17 @@ const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
     duration: 700,
+    reset: true
 })      
 
 scrollReveal.reveal (`
     #home .image, #home .wrapper-text,
     #about .image, #about .wrapper-text,
     #services header, #services .card,
-    #testimonials header, #testimonials .testimonial,
+    #testimonials .-header, #testimonials .swiper-container,
     #contacts .text, #contacts .links,
-    #footer .brand, #footer .social
+    #footer .logo, #footer .brand, #footer .social
     `, 
-    { interval: 100 }
+    { interval: 200 }
     ) 
     // elementos em ordem, intervalo para proximo elemento aparecer

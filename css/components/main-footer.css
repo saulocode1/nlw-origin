@@ -3,8 +3,7 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: var(--base-color);
-    color: var(--body-color);
-
+    color: var(--text-color-light);
 }
 
 .main-footer .brand {
@@ -15,16 +14,13 @@
 
 .main-footer .social i {
     font-size: 1.5rem;
-    color: var(--body-color);
+    color: var(--text-color-light);
 }
 
-.main-footer .social {
-    width: 8.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.main-footer .social a {
+    margin-right: 2rem;
 }
 
 .main-footer span {
-    color: var(--body-color);
+    color: var(--text-color-light);
 }
