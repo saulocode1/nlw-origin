@@ -42,15 +42,31 @@
     display: grid;
 }
 
-
 #arrow-up {
     background-color: var(--base-color);
     color: var(--text-color-light);
+
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+
     clip-path: circle();
+
     display: flex;
     align-items: center;
-    padding: 1rem;
+
+    padding: .8rem;
+    font-size: 1.5rem;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+
+#arrow-up.-show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%)
 }
