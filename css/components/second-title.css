@@ -1,5 +1,7 @@
-.main-subtitle {
+.second-title {
     font: 700 1.5rem 'Poppins', sans-serif ;
     color: var(--title-color);
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
 }
 

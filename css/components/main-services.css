@@ -1,5 +1,6 @@
 .main-services .wrapper-text p {
     color: #0F241D;
+    font-size: var(--subtitle-font-size);
 }
 
 .main-services p span {
