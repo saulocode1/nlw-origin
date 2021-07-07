@@ -1,5 +1,5 @@
 .section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: calc(3rem + var(--height-header)) 0;
+
 }
 

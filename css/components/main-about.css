@@ -1,6 +1,4 @@
 .main-about.section{
-    padding-bottom: 5rem;
-    padding-top: calc(var(--height-header) + 1.8rem);
     overflow: hidden;
     background-color: white;
 }
@@ -22,7 +20,6 @@
 
 .main-about .image img {
     position: relative;
-    
 }
 
 .main-about .image img,
