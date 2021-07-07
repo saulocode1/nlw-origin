@@ -3,10 +3,8 @@
     margin: 0 auto;
 }
 
-.card {
+.card { 
     text-align: center;
-    width: 20.43rem;
-    height: 23.25rem;
     padding: 3.62rem 2rem;
     border-bottom: 0.25rem solid var(--base-color);
     box-shadow: 0rem 0rem 0.75rem rgba(0, 0, 0, 0.08);

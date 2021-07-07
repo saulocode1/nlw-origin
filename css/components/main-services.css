@@ -6,3 +6,7 @@
 .main-services p span {
     color: var(--base-color);
 }
+
+.main-services header {
+    margin-left: 0;
+}
