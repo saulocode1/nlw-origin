@@ -10,8 +10,10 @@
     transition: color 0.3s;
     position: relative;
 }
-.main-menu a:hover {
+.main-menu a:hover,
+#main-nav .main-menu .list .main-title.active {
     color: var(--base-color);
+    font-weight: bold;
 }
 
 .main-menu ul li a::after {
@@ -25,7 +27,8 @@
     transition: width 0.2s;
 }
 
-.main-menu ul li a:hover::after {
+.main-menu ul li a:hover::after,
+.main-menu ul li a.active::after {
     width: 100%;
 }
 

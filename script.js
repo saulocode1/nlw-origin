@@ -52,10 +52,9 @@ scrollReveal.reveal (`
     { interval: 100 }) // elementos em ordem, intervalo para proximo elemento aparecer
 
 // adicionar sombra no main header quando der scroll 
+const header = document.querySelector('.main-header')
+const navHeight = header.offsetHeight // offsetHeight - pega altura do elemento
 function showShadowHeader() {
-    const header = document.querySelector('.main-header')
-    const navHeight = header.offsetHeight // offsetHeight - pega altura do elemento
-
     if (window.scrollY >= navHeight) { // scrollY - altura do scroll no eixo Y
         header.classList.add('-scroll')
     }
@@ -65,9 +64,8 @@ function showShadowHeader() {
 }
 
 // show arrow-up button
-function showArrowUpButton() {
-    const arrowUpButton = document.querySelector('#arrow-up')
-    
+const arrowUpButton = document.querySelector('#arrow-up')
+function showArrowUpButton() {   
     if(window.scrollY >= 560) {
         arrowUpButton.classList.add('-show')
     } else {
@@ -75,8 +73,34 @@ function showArrowUpButton() {
     }
 }
 
+const sections = document.querySelectorAll('main section[id]')
+function activeMenuAtCurrentSection() {
+    
+    const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4 // pegar altura no eixo Y
+
+    for (const section of sections) {
+        const sectionTop = section.offsetTop // distancia do elemento atual em relação ao topo, em pixels
+        const sectionHeight = section.offsetHeight // altura da section
+        const sectionId = section.getAttribute('id') // pegar id da section
+
+        const checkpointStart = checkpoint >= sectionTop
+        const checkpointEnd = checkpoint <= sectionTop + sectionHeight
+
+        if (checkpointStart && checkpointEnd) {
+            document
+            .querySelector('nav ul li a[href*=' + sectionId + ']')
+            .classList.add('active')
+        } else {
+            document
+            .querySelector('nav ul li a[href*=' + sectionId + ']')
+            .classList.remove('active')
+        }
+    }
+}
+
 // call scroll functions
 window.addEventListener('scroll', function() {
     showArrowUpButton()
     showShadowHeader()
+    activeMenuAtCurrentSection()
 })

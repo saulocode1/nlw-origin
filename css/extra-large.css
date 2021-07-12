@@ -12,7 +12,7 @@
     }
 
     .section {
-        padding: 10rem 0rem;
+        padding: calc(6rem + var(--height-header)) 0;
     }
 
     .section .-header {
@@ -137,5 +137,9 @@
 
      .main-footer .brand {
          margin-top: 0;
+     }
+
+     .main-footer .logo {
+         font-size: 2rem;
      }
 }
