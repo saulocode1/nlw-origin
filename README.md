@@ -1,3 +1,5 @@
+<img src="assets/preview.png" alt="preview">
+
 ## 🚀  Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
