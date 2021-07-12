@@ -13,7 +13,8 @@
 .main-menu a:hover,
 #main-nav .main-menu .list .main-title.active {
     color: var(--base-color);
-    font-weight: bold;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
 }
 
 .main-menu ul li a::after {
