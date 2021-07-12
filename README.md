@@ -16,3 +16,5 @@ Utilitários
 
 -   [randomuser.me](https://randomuser.me/photos)
 -   [IconMoon](https://icomoon.io/app/#/select)
+
+## [](https://github.com/rocketseat-education/nlw-06-origin#-projeto)💻  Projeto
