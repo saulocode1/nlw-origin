@@ -49,7 +49,7 @@ scrollReveal.reveal (`
     #contacts .text, #contacts .links,
     #footer .logo, #footer .brand, #footer .social
     `, 
-    { interval: 100 }) // elementos em ordem, intervalo para proximo elemento aparecer
+    { interval: 200 }) // elementos em ordem, intervalo para proximo elemento aparecer
 
 // adicionar sombra no main header quando der scroll 
 const header = document.querySelector('.main-header')
