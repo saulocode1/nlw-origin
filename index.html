@@ -1,415 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>beautySalon</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
-            rel="stylesheet"
-        />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beautySalon</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
-        />
-        <link rel="stylesheet" href="assets/fonts/style.css" />
-        <link
-            rel="shortcut icon"
-            href="assets/favicon.ico"
-            type="image/x-icon"
-        />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/fonts/style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components/swiper-container.css">
+    <link rel="stylesheet" href="css/components/main-header.css">
+    <link rel="stylesheet" href="css/components/main-container.css">
+    <link rel="stylesheet" href="css/components/main-home.css">
+    <link rel="stylesheet" href="css/components/main-nav.css">
+    <link rel="stylesheet" href="css/components/main-title.css">
+    <link rel="stylesheet" href="css/components/wrapper-text.css"> 
+    <link rel="stylesheet" href="css/components/main-button.css"> 
+    <link rel="stylesheet" href="css/components/main-divider.css">
+    <link rel="stylesheet" href="css/components/main-menu.css">
+    <link rel="stylesheet" href="css/components/grid.css">
+    <link rel="stylesheet" href="css/components/main-about.css">
+    <link rel="stylesheet" href="css/components/main-services.css">
+    <link rel="stylesheet" href="css/components/section.css">
+    <link rel="stylesheet" href="css/components/main-cards.css">
+    <link rel="stylesheet" href="css/components/second-title.css">
+    <link rel="stylesheet" href="css/components/second-header.css">
+    <link rel="stylesheet" href="css/components/main-testimonials.css">
+    <link rel="stylesheet" href="css/components/main-contact.css">
+    <link rel="stylesheet" href="css/components/main-footer.css">
 
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/variables.css" />
-        <link rel="stylesheet" href="css/components/swiper-container.css" />
-        <link rel="stylesheet" href="css/components/main-header.css" />
-        <link rel="stylesheet" href="css/components/main-container.css" />
-        <link rel="stylesheet" href="css/components/main-store.css" />
-        <link rel="stylesheet" href="css/components/sell-card.css" />
-        <link rel="stylesheet" href="css/components/main-nav.css" />
-        <link rel="stylesheet" href="css/components/main-title.css" />
-        <link rel="stylesheet" href="css/components/wrapper-text.css" />
-        <link rel="stylesheet" href="css/components/main-button.css" />
-        <link rel="stylesheet" href="css/components/main-divider.css" />
-        <link rel="stylesheet" href="css/components/main-menu.css" />
-        <link rel="stylesheet" href="css/components/grid.css" />
-        <link rel="stylesheet" href="css/components/main-about.css" />
-        <link rel="stylesheet" href="css/components/main-services.css" />
-        <link rel="stylesheet" href="css/components/section.css" />
-        <link rel="stylesheet" href="css/components/main-cards.css" />
-        <link rel="stylesheet" href="css/components/second-title.css" />
-        <link rel="stylesheet" href="css/components/second-header.css" />
-        <link rel="stylesheet" href="css/components/main-testimonials.css" />
-        <link rel="stylesheet" href="css/components/main-contact.css" />
-        <link rel="stylesheet" href="css/components/main-footer.css" />
+    <link rel="stylesheet" href="css/extra-large.css">
+    <link rel="stylesheet" href="css/large-device.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header -scroll">
+        <nav id="main-nav" class="main-container">
+            <a class="logo" href="#home">beauty<span>salon</span>.</a>
+            <div class="main-menu">
+                <ul class="list -grid">
+                    <li><a class="main-title" href="#home">Início</a></li>
+                    <li><a class="main-title" href="#about">Sobre</a></li>
+                    <li><a class="main-title" href="#services">Serviços</a></li>
+                    <li><a class="main-title" href="#testimonials">Depoimentos</a></li>
+                    <li><a class="main-title" href="#contacts">Contato</a></li>
+                </ul>
+            </div>
+            <div id="menu" class="toggle icon-menu"></div>
+            <div id="close" class="toggle icon-close"></div>
+        </nav>
+    </header>
 
-        <link rel="stylesheet" href="css/extra-large.css" />
-        <link rel="stylesheet" href="css/large-device.css" />
-    </head>
-    <body>
-        <!-- HEADER -->
-        <header class="main-header -scroll">
-            <nav id="main-nav" class="main-container">
-                <a class="logo" href="#home">Aldeota<span>Bazar</span></a>
-                <div class="main-menu">
-                    <ul class="list -grid">
-                        <li><a class="main-title" href="#clothes">Roupas</a></li>
-                        <li><a class="main-title" href="#accessories">Acessórios</a></li>
-                        <li>
-                            <a class="main-title" href="#services">Sobre</a>
-                        </li>
-                        <li>
-                            <a class="main-title" href="#contacts">Contato</a>
-                        </li>
-                        <li>
-                            <a class="main-title" href="#testimonials"
-                                >Depoimentos</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                <div id="menu" class="toggle icon-menu"></div>
-                <div id="close" class="toggle icon-close"></div>
-            </nav>
-        </header>
-
-        <main>
-            <!-- HOME -->
-            <section class="main-store" id="clothes">
-                <h2 class="store-title">Roupas</h2>
-                <div class="store">
-                    <div class="sell-card">
-                        <img
-                            class="card-image"
-                            src="assets/img/bag.jpg"
-                            alt=""
-                        />
-                        <h1 class="product-name">Fancy Product</h1>
-                        <h2 class="product-price">R$ 40,00</h2>
-                        <a href="" class="button">Carrinho</a>
-                    </div>
-                    <div class="sell-card">
-                        <img
-                            class="card-image"
-                            src="assets/img/bag.jpg"
-                            alt=""
-                        />
-                        <h1 class="product-name">Fancy Product</h1>
-                        <h2 class="product-price">R$ 40,00</h2>
-                        <a href="" class="button">Carrinho</a>
-                    </div>
-                    <div class="sell-card">
-                        <img
-                            class="card-image"
-                            src="assets/img/bag.jpg"
-                            alt=""
-                        />
-                        <h1 class="product-name">Fancy Product</h1>
-                        <h2 class="product-price">R$ 40,00</h2>
-                        <a href="" class="button">Carrinho</a>
-                    </div>
-                    <div class="sell-card">
-                        <img
-                            class="card-image"
-                            src="assets/img/bag.jpg"
-                            alt=""
-                        />
-                        <h1 class="product-name">Fancy Product</h1>
-                        <h2 class="product-price">R$ 40,00</h2>
-                        <a href="" class="button">Carrinho</a>
-                    </div>
-                </div>
-                <a href="" class="more-button">Mais</a>
-            </section>
-
-            <div class="main-divider-2"></div>
-
-            <section class="main-store" id="accessories">
-                <h2 class="store-title">Acessórios</h2>
-                <div class="store">
-                    <div class="sell-card">
-                        <img
-                            class="card-image"
-                            src="assets/img/bag.jpg"
-                            alt=""
-                        />
-                        <h1 class="product-name">Fancy Product</h1>
-                        <h2 class="product-price">R$ 40,00</h2>
-                        <a href="" class="button">Carrinho</a>
-                    </div>
-                    <div class="sell-card">
-                        <img
-                            class="card-image"
-                            src="assets/img/bag.jpg"
-                            alt=""
-                        />
-                        <h1 class="product-name">Fancy Product</h1>
-                        <h2 class="product-price">R$ 40,00</h2>
-                        <a href="" class="button">Carrinho</a>
-                    </div>
-                    <div class="sell-card">
-                        <img
-                            class="card-image"
-                            src="assets/img/bag.jpg"
-                            alt=""
-                        />
-                        <h1 class="product-name">Fancy Product</h1>
-                        <h2 class="product-price">R$ 40,00</h2>
-                        <a href="" class="button">Carrinho</a>
-                    </div>
-                    <div class="sell-card">
-                        <img
-                            class="card-image"
-                            src="assets/img/bag.jpg"
-                            alt=""
-                        />
-                        <h1 class="product-name">Fancy Product</h1>
-                        <h2 class="product-price">R$ 40,00</h2>
-                        <a href="" class="button">Carrinho</a>
-                    </div>
-                </div>
-                <a href="" class="more-button">Mais</a>
-
-            </section>
-
-            <div class="main-divider"></div>
-
-            <!-- ABOUT -->
-            <section class="main-about section" id="about">
-                <div class="container -grid">
-                    <div class="image">
-                        <img
-                            class="img"
-                            src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                            alt="Mulheres sorrindo com itens de cabelo"
-                        />
-                    </div>
-                    <div class="wrapper-text -left">
-                        <h2 class="main-title">Sobre nós</h2>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Eaque delectus nobis quos, ipsam dolor,
-                            dignissimos inventore incidunt fuga, ea eveniet
-                            reiciendis consequatur? Consectetur cumque
-                            repellendus non maiores assumenda, molestiae ad?
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Ut expedita eos, omnis ab saepe in porro
-                            corporis fugit animi! Totam sunt, nesciunt tempora
-                            iste saepe voluptate. Hic excepturi facilis debitis.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Iusto, provident minus corporis ipsam
-                            recusandae alias blanditiis totam, dignissimos,
-                            aliquid harum voluptate autem. Aperiam cumque
-                            ducimus magni natus facilis harum quas!
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="main-divider-2"></div>
-
-            <!-- SERVICES -->
-            <section class="main-services section" id="services">
-                <div class="main-container -grid">
-                    <header class="wrapper-text -left -header">
-                        <h1 class="main-title">Serviços</h1>
-                        <p class="subtitle">
-                            Com mais de 10 anos no mercado, o
-                            <span><strong>Beautysalon</strong></span> já
-                            conquistou clientes de inúmeros países com seus
-                            tratamentos exclusivos e totalmente naturais
-                        </p>
-                    </header>
-                    <div class="main-cards -grid">
-                        <div class="card">
-                            <i class="icon-woman-hair"></i>
-                            <h1 class="second-title">Terapia Capilar</h1>
-                            <p>
-                                Terapia completa para couro cabeludo e fios,
-                                protegendo todos os tipos de cabelos, inclusive
-                                os longos e finos.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <i class="icon-trim"></i>
-                            <h1 class="second-title">Cortes</h1>
-                            <p>
-                                A nossa equipe é repleta de profissionais
-                                renomados, famosos por lançarem tendências com
-                                cortes diferenciados e clássicos.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <i class="icon-cosmetic"></i>
-                            <h1 class="second-title">Tratamentos</h1>
-                            <p>
-                                O beautysalon conta com diversos tratamentos
-                                naturais e totalmente veganos, para qualquer
-                                tipo de cabelo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="main-divider"></div>
-
-            <!-- TESTIMONIALS -->
-            <section class="main-testimonials section" id="testimonials">
-                <div class="container">
-                    <header class="-header -left">
-                        <h2 class="main-title">
-                            Depoimentos de quem já passou por aqui
-                        </h2>
-                    </header>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="testimonial swiper-slide">
-                                <blockquote>
-                                    <p>
-                                        <span>&ldquo;</span>
-                                        Eu sou cliente do Beautysalon há 5 anos
-                                        e não troco por nada! Certamente meu
-                                        cabelo mudou muito depois que comecei a
-                                        tratar somente com produtos naturais e
-                                        veganos. São profissionais incríveis e
-                                        qualificados.
-                                    </p>
-                                    <cite class="cite">
-                                        <img
-                                            class="testimonial-photo"
-                                            src="https://randomuser.me/api/portraits/women/89.jpg"
-                                            alt="Foto de Wanessa Souza"
-                                        />
-                                        Wanessa Souza
-                                    </cite>
-                                </blockquote>
-                            </div>
-
-                            <div class="testimonial swiper-slide">
-                                <blockquote>
-                                    <!-- caixa de citação -->
-                                    <p>
-                                        <span>&ldquo;</span>
-                                        Eu sou cliente do Beautysalon há 5 anos
-                                        e não troco por nada! Certamente meu
-                                        cabelo mudou muito depois que comecei a
-                                        tratar somente com produtos naturais e
-                                        veganos. São profissionais incríveis e
-                                        qualificados.
-                                    </p>
-                                    <cite class="cite">
-                                        <!-- citação de alguém-->
-                                        <img
-                                            class="testimonial-photo"
-                                            src="https://randomuser.me/api/portraits/women/29.jpg"
-                                            alt="Foto de Débora Ramos"
-                                        />
-                                        Débora Ramos
-                                    </cite>
-                                </blockquote>
-                            </div>
-
-                            <div class="testimonial swiper-slide">
-                                <blockquote>
-                                    <p>
-                                        <span>&ldquo;</span>
-                                        Eu sou cliente do Beautysalon há 5 anos
-                                        e não troco por nada! Certamente meu
-                                        cabelo mudou muito depois que comecei a
-                                        tratar somente com produtos naturais e
-                                        veganos. São profissionais incríveis e
-                                        qualificados.
-                                    </p>
-                                    <cite class="cite">
-                                        <img
-                                            class="testimonial-photo"
-                                            src="https://randomuser.me/api/portraits/women/57.jpg"
-                                            alt="Foto de Gabriela Dinis"
-                                        />
-                                        Gabriela Dinis
-                                    </cite>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="main-divider-2"></div>
-
-            <!-- CONTACTS -->
-            <section class="main-contact section" id="contacts">
-                <div class="container -grid">
-                    <div class="text">
-                        <h2 class="main-title">
-                            Entre em contato com a gente!
-                        </h2>
-                        <p>
-                            Entre em contato com a Beautysalon, queremos tirar
-                            suas dúvidas, ouvir suas críticas e sugestões.
-                        </p>
-                        <a href="" class="main-button" target="_blank"
-                            ><i class="icon-whatsapp"></i>Entrar em contato</a
-                        >
-                    </div>
-                    <div class="links">
-                        <ul class="list -grid">
-                            <li class="icon-phone">11 99845-6754</li>
-                            <li class="icon-map-pin">R. Amauri Souza, 346</li>
-                            <li class="icon-mail">contato@beautysalon.com</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <div class="main-divider"></div>
-        </main>
-
-        <!-- FOOTER -->
-        <footer class="main-footer" id="footer">
+    <main>
+    <!-- HOME -->
+        <section class="main-home section" id="home">
             <div class="container -grid">
-                <div class="brand -grid">
-                    <a class="logo" href="#home">beauty<span>salon</span>.</a>
-                    <p>©2021 Beautysalon.</p>
-                    <p>Todos os direitos reservados.</p>
+                <div class="image">
+                    <img class="img" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mulher penteando outra">
                 </div>
-                <div class="social">
-                    <a href="https://www.instagram.com/" target="_blank"
-                        ><i class="icon-instagram"></i
-                    ></a>
-                    <a href="https://www.facebook.com/" target="_blank"
-                        ><i class="icon-facebook"></i
-                    ></a>
-                    <a href="https://www.youtube.com/" target="_blank"
-                        ><i class="icon-youtube"></i
-                    ></a>
+                <div class="wrapper-text">
+                    <h2 class="main-title">Saúde natural para os seus cabelos</h2>
+                    <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
+                    <a class="main-button" href="#">Agendar horário</a>
                 </div>
             </div>
-        </footer>
+        </section>
 
-        <a href="#home" id="arrow-up" class="back-to-top">
-            <i class="icon-arrow-up"></i>
-        </a>
+        <div class="main-divider"></div>
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- swiper -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- scroll reveal -->
-        <script src="script.js"></script>
-    </body>
-</html>
+    <!-- ABOUT -->
+        <section class="main-about section" id="about">
+            <div class="container -grid">
+                <div class="image">
+                    <img class="img" src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mulheres sorrindo com itens de cabelo">
+                </div>
+                <div class="wrapper-text -left">
+                    <h2 class="main-title">Sobre nós</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque delectus nobis quos, ipsam dolor, dignissimos inventore incidunt fuga, ea eveniet reiciendis consequatur? Consectetur cumque repellendus non maiores assumenda, molestiae ad?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut expedita eos, omnis ab saepe in porro corporis fugit animi! Totam sunt, nesciunt tempora iste saepe voluptate. Hic excepturi facilis debitis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, provident minus corporis ipsam recusandae alias blanditiis totam, dignissimos, aliquid harum voluptate autem. Aperiam cumque ducimus magni natus facilis harum quas!</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-divider-2"></div>
+
+    <!-- SERVICES -->
+        <section class="main-services section" id="services">
+            <div class="main-container -grid">
+                <header class="wrapper-text -left -header">
+                    <h1 class="main-title">Serviços</h1>
+                    <p class="subtitle">Com mais de 10 anos no mercado, o <span><strong>Beautysalon</strong></span> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
+                </header>
+                <div class="main-cards -grid">
+                    <div class="card">
+                        <i class="icon-woman-hair"></i>
+                        <h1 class="second-title">Terapia Capilar</h1>
+                        <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-trim"></i>
+                        <h1 class="second-title">Cortes</h1>
+                        <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-cosmetic"></i>
+                        <h1 class="second-title">Tratamentos</h1>
+                        <p>O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo
+                            de cabelo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-divider"></div>
+
+    <!-- TESTIMONIALS -->
+        <section class="main-testimonials section" id="testimonials">
+            <div class="container">
+                <header class="-header -left">
+                    <h2 class="main-title">Depoimentos de quem já passou por aqui</h2>
+                </header>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span> 
+                                    Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.
+                                </p>
+                                <cite class="cite">
+                                    <img class="testimonial-photo" src="https://randomuser.me/api/portraits/women/89.jpg" alt="Foto de Wanessa Souza">
+                                    Wanessa Souza
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote> <!-- caixa de citação -->
+                                <p>
+                                    <span>&ldquo;</span> 
+                                    Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.
+                                </p>
+                                <cite class="cite"> <!-- citação de alguém-->
+                                    <img class="testimonial-photo" src="https://randomuser.me/api/portraits/women/29.jpg" alt="Foto de Débora Ramos">
+                                    Débora Ramos
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span> 
+                                    Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.
+                                </p>
+                                <cite class="cite">
+                                    <img class="testimonial-photo" src="https://randomuser.me/api/portraits/women/57.jpg" alt="Foto de Gabriela Dinis">
+                                    Gabriela Dinis
+                                </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-divider-2"></div>
+
+    <!-- CONTACTS -->
+        <section class="main-contact section" id="contacts">    
+            <div class="container -grid">
+                <div class="text">
+                    <h2 class="main-title">Entre em contato
+                        com a gente!</h2>
+                    <p>Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+                    <a href="" class="main-button" target="_blank"><i class="icon-whatsapp"></i>Entrar em contato</a>
+                </div>
+                <div class="links">
+                    <ul class="list -grid">
+                        <li class="icon-phone"> 11 99845-6754</li>
+                        <li class="icon-map-pin"> R. Amauri Souza, 346</li>
+                        <li class="icon-mail"> contato@beautysalon.com</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-divider"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer" id="footer">
+        <div class="container -grid">
+            <div class="brand -grid">
+                <a class="logo" href="#home">beauty<span>salon</span>.</a>
+                <p>©2021 Beautysalon.</p>
+                <p>Todos os direitos reservados.</p>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" id="arrow-up" class="back-to-top">
+        <i class="icon-arrow-up"></i>
+    </a>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- swiper -->
+    <script src="https://unpkg.com/scrollreveal"></script> <!-- scroll reveal -->
+    <script src="script.js"></script>
+    
+</body>
+</html>     
